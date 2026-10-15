@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mathilde &amp; Alejandro</title>
+<meta name="description" content="Invitation mariage · Invitación boda · Mathilde &amp; Alejandro · 13.11.2027">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mathilde &amp; Alejandro">
+<meta property="og:title" content="Mathilde &amp; Alejandro">
+<meta property="og:description" content="Invitation mariage · Invitación boda · Mathilde &amp; Alejandro · 13.11.2027">
+<meta property="og:url" content="https://miquetfernandez.github.io/Boda_Mariage_M_A/">
+<meta property="og:image" content="https://miquetfernandez.github.io/Boda_Mariage_M_A/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>html{color-scheme:light}:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<style>
+/* Layout: one sheet of torn autumn paper. Photo and title open it, the story sits between
+   two watercolours, a sunset band carries the date, then the day itself and two travel cards. */
+:root{
+  --paper:#f4e8dc;        /* the invitation's own cream */
+  --backdrop:#e2d0bb;     /* table under the sheet */
+  --frame:#fbf6ee;        /* photo print border, card hairlines */
+  --ink:#4b3a30;          /* running text */
+  --ink-soft:#7a655a;     /* spaced labels */
+  --terra:#8c3f26;        /* titles, rules, primary button */
+  --terra-deep:#74321d;
+  --olive:#6d7150;        /* reply button */
+  --olive-deep:#5b5f42;
+  --sand:#e3c6a6;         /* secondary buttons */
+  --sand-deep:#d8b792;
+  --shadow:rgba(84,52,30,.22);
+  --display:"Cormorant Garamond","EB Garamond",Garamond,"Times New Roman",serif;
+  --body:"EB Garamond","Cormorant Garamond",Garamond,Georgia,serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--backdrop);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.5;padding-block:28px;padding-inline:16px}
+h1,h2,h3,p,ol{margin:0}
+ol{padding:0;list-style:none}
+img{display:block;height:auto}
+a{color:inherit}
+
+.sheet{position:relative;max-width:1120px;margin:0 auto;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22220%22 height=%22220%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.8%22 numOctaves=%223%22 seed=%227%22/%3E%3CfeColorMatrix values=%220 0 0 0 .45  0 0 0 0 .3  0 0 0 0 .2  0 0 0 .09 0%22/%3E%3C/filter%3E%3Crect width=%22220%22 height=%22220%22 filter=%22url%28%23n%29%22/%3E%3C/svg%3E");box-shadow:0 10px 40px var(--shadow);overflow:hidden}
+
+.label{font-family:var(--display);font-weight:600;font-size:.86rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
+.caps{font-family:var(--display);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--terra)}
+.rule{display:flex;align-items:center;gap:12px;color:var(--terra)}
+.rule::before,.rule::after{content:"";height:1px;width:clamp(48px,9vw,96px);background:currentColor;opacity:.75}
+.rule svg{width:14px;height:14px;fill:currentColor;flex:none}
+.rule.center{justify-content:center}
+
+/* torn paper edges */
+.tear{position:absolute;left:0;right:0;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 760 22%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0,0 L0.0,13.0 L6.9,14.9 L14.7,18.1 L21.9,13.1 L28.6,14.9 L35.7,17.2 L44.1,13.6 L53.9,12.7 L58.1,11.9 L66.6,11.2 L77.5,15.1 L88.2,14.0 L96.0,12.3 L106.7,18.2 L112.5,14.3 L121.5,12.1 L128.4,13.2 L137.3,13.8 L146.3,9.7 L156.9,4.0 L167.1,4.0 L173.6,4.0 L180.1,4.0 L190.6,7.2 L196.5,4.0 L203.5,7.5 L212.1,8.3 L217.2,7.8 L227.6,10.6 L234.0,8.5 L239.2,13.1 L244.3,9.0 L252.4,10.2 L258.8,9.5 L269.1,8.6 L279.9,14.2 L289.8,13.9 L297.6,14.5 L307.1,15.4 L313.5,18.9 L320.4,14.6 L331.3,16.9 L339.8,18.3 L349.5,15.3 L355.7,15.0 L364.7,10.4 L372.1,10.6 L378.5,11.8 L383.2,5.3 L388.9,5.0 L398.4,4.8 L406.4,7.4 L416.1,7.5 L425.1,6.0 L434.3,7.6 L443.2,7.7 L450.3,8.6 L458.5,8.8 L464.7,8.1 L470.9,5.1 L481.1,4.0 L485.9,9.3 L492.6,9.6 L502.1,5.5 L511.4,6.6 L521.7,9.7 L530.7,15.4 L539.8,18.6 L548.3,19.4 L554.4,14.9 L559.2,14.6 L567.4,18.7 L577.5,17.3 L584.5,11.7 L591.8,13.2 L602.8,11.7 L612.9,9.8 L620.8,13.5 L627.9,10.5 L637.3,14.1 L644.9,13.1 L651.7,13.2 L661.8,10.4 L668.3,12.1 L676.6,6.8 L681.3,8.2 L689.7,4.2 L695.6,7.1 L706.6,5.1 L715.9,4.0 L721.7,7.5 L726.3,5.5 L734.2,7.8 L744.2,7.1 L750.3,10.8 L754.5,14.8 L760.0,13.0 L760,0 Z%22 fill=%22%23f4e8dc%22/%3E%3C/svg%3E") repeat-x;background-size:760px 22px;pointer-events:none;z-index:2}
+.tear.up{bottom:-1px;transform:scaleY(-1);filter:drop-shadow(0 2px 2px rgba(60,35,20,.28))}
+.tear.down{top:-1px;filter:drop-shadow(0 2px 2px rgba(60,35,20,.28))}
+
+/* language switch */
+.lang{position:absolute;top:14px;left:14px;z-index:5;display:flex;background:color-mix(in srgb,var(--frame) 94%,transparent);border-radius:999px;padding:4px;box-shadow:0 3px 12px rgba(84,52,30,.26)}
+.lang button{display:inline-flex;align-items:center;gap:8px;font:600 .9rem/1 var(--display);letter-spacing:.14em;border:0;background:transparent;color:var(--ink-soft);padding:7px 14px 7px 8px;border-radius:999px;cursor:pointer}
+.fl{display:inline-block;width:1.4em;height:1.4em;border-radius:50%;flex:none;box-shadow:0 0 0 1.5px rgba(255,255,255,.9),0 1px 3px rgba(60,30,15,.35)}
+.fl.fr{background:linear-gradient(90deg,#1f3f93 0 33.3%,#fff 33.3% 66.6%,#d8323a 66.6%)}
+.fl.es{background:linear-gradient(180deg,#c8202a 0 25%,#f6c42c 25% 75%,#c8202a 75%)}
+.lang button[aria-pressed="true"]{background:var(--terra);color:var(--frame)}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+
+/* top: the photo and the three cities are one piece of the poster on the left; title and story on the right */
+.top{position:relative;display:grid;grid-template-columns:63.1% 36.9%;grid-template-rows:auto auto auto}
+.photo{grid-column:1;grid-row:1;padding:3.5% 0 0 3%}
+.photo img{width:100%}
+
+.hero-title{grid-column:2;grid-row:1;align-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(6px,1.3vw,16px);text-align:center;padding:0 12% 0 0;position:relative;z-index:1;min-width:0}
+.avion{width:98%;max-width:none;margin:0 0 -2px 11%}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(1.9rem,4.35vw,3.4rem);line-height:1.14;letter-spacing:.13em;text-transform:uppercase;color:var(--terra);white-space:nowrap}
+.names{font-family:var(--display);font-weight:600;font-size:clamp(.78rem,1.5vw,1.1rem);letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+.hero-title .date{font-family:var(--display);font-weight:600;font-size:clamp(.78rem,1.5vw,1.08rem);letter-spacing:.4em;color:var(--ink-soft);font-variant-numeric:lining-nums}
+.bord{position:absolute;right:0;top:0;width:11.62%;z-index:3;pointer-events:none}
+
+/* soft divider between the photo and the journey */
+.sep{grid-column:1/-1;grid-row:2;display:flex;align-items:center;justify-content:center;gap:16px;padding:20px 0 6px;color:var(--terra);position:relative;z-index:2}
+.sep span{height:1px;width:24%;background:currentColor;opacity:.5}
+.sep img{width:74px}
+.villes{grid-column:1;grid-row:3;width:100%;align-self:end;margin-top:-3.5%}
+.story-text{grid-column:2;grid-row:3;align-self:center;text-align:center;font-size:clamp(14px,1.36vw,17px);line-height:1.38;padding:0 12% 12px 4%;min-width:0;text-wrap:pretty}
+
+.story-text p+p{margin-top:.95em}
+.story-text svg{width:15px;height:15px;fill:#c2553a;vertical-align:-1px;margin-left:4px}
+
+/* save the date */
+.save{position:relative;background:url("assets/coucher.webp") center/100% auto no-repeat;aspect-ratio:1024/222;width:100%;display:flex;flex-direction:column;align-items:center;gap:clamp(4px,.75vw,10px);text-align:center;padding:clamp(4px,.8vw,10px) 16px 0;margin-block:6px 10px}
+.save .label{color:#8a5a45;font-size:clamp(.6rem,1.15vw,.86rem)}
+.save .big{font-family:var(--display);font-weight:600;font-size:clamp(1rem,2vw,1.5rem);line-height:1.25;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);font-variant-numeric:lining-nums;text-shadow:0 0 12px rgba(253,236,214,.95),0 0 4px rgba(253,236,214,.8)}
+
+.cal{display:flex;justify-content:center;padding:6px 16px 0}
+.btn.cal-btn{background:var(--sand);color:var(--ink);padding:11px 24px 10px;font-size:.82rem}
+.btn.cal-btn:hover{background:var(--sand-deep)}
+.btn.cal-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.700}
+
+/* the day */
+.day{position:relative;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px 44px;padding:46px 112px 30px 52px;align-items:start}
+.globe{position:absolute;right:0;top:30px;width:clamp(90px,10.9%,122px)}
+.venue{display:grid;gap:16px;justify-items:center;min-width:0}
+.venue-head{display:flex;align-items:center;gap:14px;align-self:start;justify-self:start}
+.venue-head>img{width:32px;flex:none}
+.venue-head>div{display:grid;gap:7px}
+.venue-head .rule{gap:8px}
+.venue-head .rule::before,.venue-head .rule::after{width:auto;flex:1}
+.venue-head .rule svg{width:10px;height:10px}
+.venue-name{font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);text-align:center;margin-bottom:-8px}
+.print{position:relative;width:min(74%,290px);background:var(--frame);padding:9px;box-shadow:0 8px 20px var(--shadow);transform:rotate(-3deg);margin:10px 0 26px 18px}
+.print .shot{width:100%}
+.print .tape{position:absolute;right:-17px;bottom:-8px;width:56px;height:25px;background:rgba(224,193,160,.84);transform:rotate(-40deg);box-shadow:0 1px 2px rgba(80,50,30,.16)}
+.print .brin{position:absolute;left:-86px;bottom:-22px;width:136px;max-width:none;transform:rotate(3deg)}
+.addr{font-style:italic;font-size:.98rem;color:var(--ink-soft);text-align:center}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:600;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:0;border-radius:999px;cursor:pointer;transition:background-color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{flex:none}
+.btn.maps{background:var(--terra);color:var(--frame);padding:13px 30px 12px}
+.btn.maps:hover{background:var(--terra-deep)}
+.btn.maps svg{width:15px;height:15px;fill:currentColor}
+.btn.soft{background:var(--sand);color:var(--ink);padding:12px 26px 11px;grid-area:btn;justify-self:start;white-space:nowrap;position:relative;z-index:1}
+.btn.soft:hover{background:var(--sand-deep)}
+.btn.soft svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;transition:transform .2s}
+.btn.soft[aria-expanded="true"] svg{transform:rotate(90deg)}
+
+.programme{display:grid;gap:14px;justify-items:center;min-width:0}
+.programme h2{font-size:1rem;letter-spacing:.34em}
+.strip{width:93.46%;margin:8px 0 -4px 3.55%;justify-self:start}
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}
+
+.timeline li{display:grid;justify-items:center;text-align:center;min-width:0}
+
+.timeline time{font-family:var(--display);font-weight:600;font-size:1.34rem;line-height:1.1;color:var(--terra);font-variant-numeric:lining-nums}
+.timeline .what{font-size:1.12rem;line-height:1.3}
+.timeline .leaf{height:38px;width:auto;margin-top:8px}
+.btn.rsvp{background:var(--olive);color:var(--frame);padding:14px 40px 13px;margin-top:16px;width:min(100%,420px);box-shadow:0 4px 14px rgba(70,74,45,.28)}
+.btn.rsvp:hover{background:var(--olive-deep)}
+.btn.rsvp>svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4}
+.btn.rsvp span{display:grid;gap:2px}
+.btn.rsvp b{font-weight:600;font-size:1.02rem;letter-spacing:.12em}
+.btn.rsvp small{font-family:var(--body);font-size:.86rem;letter-spacing:.08em;text-transform:none;opacity:.92}
+.note{font-style:italic;color:var(--ink-soft);text-align:center;max-width:44ch;text-wrap:balance}
+.card .note{grid-area:note;text-align:left;padding-bottom:6px}
+
+/* travel cards */
+.more{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr) minmax(0,1fr);gap:18px;padding:6px 20px 34px}
+/* travel touches: a flight path above the trip cards, a postmark to close */
+.vol{grid-column:1/-1;display:flex;align-items:flex-end;justify-content:center;gap:8px;margin-bottom:-2px}
+.vol svg{width:min(520px,72%);height:auto;overflow:visible;color:var(--terra);margin-bottom:10px}
+.card{display:grid;grid-template-columns:minmax(0,1fr) clamp(112px,15vw,170px);grid-template-areas:"text pic" "btn pic" "note note";gap:16px 12px;align-items:start;border:1.5px solid color-mix(in srgb,var(--frame) 88%,transparent);padding:22px 0 16px 22px;min-width:0}
+.card-text{grid-area:text;display:grid;gap:12px;min-width:0}
+.card h2{display:flex;align-items:center;gap:14px;font-size:1rem;letter-spacing:.28em}
+.card h2 img{width:38px;flex:none}
+.card .rule{padding-left:44px}
+.card .rule::before,.card .rule::after{width:56px}
+.card p{font-size:1.02rem;line-height:1.42;text-wrap:pretty}
+.code{display:inline-block;font-family:var(--display);font-weight:600;letter-spacing:.14em;color:var(--terra);border:1px dashed color-mix(in srgb,var(--terra) 60%,transparent);border-radius:6px;padding:0 10px;margin-left:2px;white-space:nowrap}
+.code.soon{font-weight:500;font-style:italic;letter-spacing:.04em;color:var(--ink-soft);border-color:color-mix(in srgb,var(--ink-soft) 50%,transparent)}
+.card .pic{grid-area:pic;width:100%;align-self:end}
+.card.trajet{grid-template-columns:minmax(0,1fr);grid-template-areas:"text";padding-right:22px}
+.card h2 .ico-t{width:30px;height:30px;flex:none;fill:var(--terra);transform:rotate(45deg);margin-inline:4px}
+.moyens{display:grid;gap:12px;margin:2px 0 0}
+.moyens dt{display:flex;align-items:baseline;gap:10px;font-family:var(--display);font-weight:600;font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terra)}
+.moyens dt::after{content:"";order:1;flex:1;border-bottom:1px dotted color-mix(in srgb,var(--terra) 55%,transparent);transform:translateY(-3px)}
+.moyens dt b{order:2;font-weight:600;font-size:1.06rem;letter-spacing:.04em;text-transform:none;color:var(--ink);font-variant-numeric:lining-nums;white-space:nowrap}
+.moyens dd{margin:3px 0 0;font-size:.98rem;line-height:1.4;text-wrap:pretty}
+.card p.petit{font-style:italic;font-size:.86rem;color:var(--ink-soft)}
+
+/* passenger notice (gift) and the countdown to take-off */
+.avis,.decollage{display:grid;justify-items:center;gap:14px;text-align:center;padding:10px 24px 34px}
+.avis-text{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.2rem,2.5vw,1.5rem);line-height:1.34;color:var(--terra);max-width:30em;text-wrap:balance}
+.avis-data{display:grid;gap:10px;margin:4px 0 0;padding:16px 26px;border:1.5px dashed color-mix(in srgb,var(--terra) 55%,transparent);border-radius:10px;background:color-mix(in srgb,var(--frame) 70%,transparent);min-width:min(100%,300px)}
+.avis-data dt{font-family:var(--display);font-weight:600;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+.avis-data dd{margin:2px 0 0;font-family:var(--display);font-weight:600;font-size:1.14rem;letter-spacing:.08em;font-variant-numeric:lining-nums;overflow-wrap:anywhere;user-select:all}
+.btn.copy{background:var(--sand);color:var(--ink);padding:10px 24px 9px;font-size:.8rem}
+.btn.copy:hover{background:var(--sand-deep)}
+.merci{font-style:italic;font-size:1.08rem;color:var(--ink);max-width:30em;text-wrap:balance;margin-top:6px}
+.flaps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(6px,2vw,16px);width:min(100%,430px);margin-top:4px}
+.flaps div{display:grid;justify-items:center;gap:8px}
+.flaps b{position:relative;display:block;min-width:2.5ch;padding:.26em .28em .18em;border-radius:8px;background:linear-gradient(180deg,#9c4a2e 0 49.5%,#7c351f 50.5% 100%);color:var(--frame);font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,7.4vw,3rem);line-height:1;font-variant-numeric:lining-nums tabular-nums;box-shadow:0 4px 10px var(--shadow),inset 0 1px 0 rgba(255,255,255,.14)}
+.flaps b::after{content:"";position:absolute;left:0;right:0;top:50%;height:1.5px;margin-top:-1px;background:rgba(40,15,5,.38)}
+.flaps span{font-family:var(--display);font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.vol-info{font-family:var(--display);font-weight:600;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-variant-numeric:lining-nums;margin-top:4px}
+footer{display:grid;justify-items:center;gap:8px;padding:14px 16px 46px;text-align:center}
+.embleme{display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,26px)}
+.embleme img{width:clamp(180px,42vw,270px);filter:drop-shadow(0 6px 10px var(--shadow))}
+
+@media (min-width:1041px){
+  .more.deux{grid-template-columns:repeat(2,minmax(0,1fr));max-width:840px;margin-inline:auto}
+  .card:not(.trajet){grid-template-columns:minmax(0,1fr) 112px;padding-left:18px;gap:14px 8px}
+  .card h2{letter-spacing:.16em;gap:10px;font-size:.94rem}
+  .card .rule{padding-left:40px}
+  .card .btn.soft{white-space:normal;padding-inline:18px;text-align:center}
+}
+@media (max-width:1040px){
+  .more{grid-template-columns:minmax(0,1fr);padding-inline:20px;max-width:640px;margin-inline:auto}
+}
+@media (max-width:860px){
+  .day{grid-template-columns:minmax(0,1fr);padding:40px 24px 26px;gap:44px}
+  .globe{display:none}
+  .venue-head{justify-self:center}
+
+
+  .top{display:block}
+  .photo{padding:64px 6px 0}
+  .villes{margin-top:-4%}
+  .sep span{width:22%}
+  .hero-title{padding:22px 20px 4px;gap:14px}
+  .avion{width:230px;margin:0 0 -8px}
+  h1{font-size:clamp(2rem,8.6vw,3.2rem)}
+  .names{font-size:clamp(.92rem,3.9vw,1.16rem)}
+  .hero-title .date{font-size:1.05rem}
+  .story-text{padding:26px 28px 34px;max-width:34em;margin:0 auto;font-size:1.06rem;line-height:1.48}
+
+}
+@media (max-width:700px){
+  body{padding:0}
+  .sheet{box-shadow:none}
+
+  .names{letter-spacing:.22em}
+  .save{aspect-ratio:1200/510;height:auto;min-height:172px;padding-top:8px;gap:5px;background:url("assets/coucher-m.webp") center bottom/cover no-repeat}
+  .save::before{content:"";position:absolute;left:50%;top:0;width:96%;height:110px;transform:translateX(-50%);background:rgba(254,243,229,.8);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 13%,#000 85%,transparent 100%),linear-gradient(90deg,transparent 0,#000 13%,#000 87%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 13%,#000 85%,transparent 100%),linear-gradient(90deg,transparent 0,#000 13%,#000 87%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect;pointer-events:none}
+  .save>*{position:relative}
+  .save .label{font-size:.76rem}
+  .save .big{font-size:1.18rem;line-height:1.2;letter-spacing:.14em;color:var(--terra-deep);text-shadow:0 0 8px rgba(254,243,229,.9)}
+  .timeline time{font-size:1.16rem}
+  .timeline .what{font-size:1rem}
+
+  .card{grid-template-areas:"text pic" "btn btn" "note note";padding:20px 0 18px 18px}
+  .card.trajet{grid-template-areas:"text";padding-right:18px}
+  .card .btn.soft{margin-right:18px;white-space:normal}
+  .card .note{padding-right:18px}
+  .card h2{letter-spacing:.2em;gap:10px}
+  .card .rule{padding-left:40px}
+  .btn.rsvp{padding-inline:22px}
+}
+@media (prefers-reduced-motion:reduce){.btn,.btn svg{transition:none}}
+
+/* opening: a sealed envelope; the boarding pass slides out, turns upright, then the page */
+html.intro-on{overflow:hidden}
+.intro{--ew:min(82vw,400px,54vh);--eh:calc(var(--ew)/1.42);--pw:calc(var(--ew)*1.04);position:fixed;inset:0;z-index:50;display:grid;justify-items:center;align-content:center;gap:26px;background:var(--paper);overflow:hidden;cursor:pointer;transition:opacity .7s ease}
+.intro .deco{position:absolute;right:0;top:0;width:min(22vw,120px);pointer-events:none}
+.stage{position:relative;width:var(--ew);height:var(--eh);perspective:900px}
+.env-back,.env-front,.env-flap{position:absolute;left:0;right:0;top:0;transition:opacity .7s ease,transform .9s ease}
+.env-back{bottom:0;border-radius:7px;background:#dcc5ab;box-shadow:0 16px 26px rgba(84,52,30,.26);z-index:1}
+.env-front{bottom:0;border-radius:7px;overflow:hidden;z-index:3}
+.env-front svg{display:block;width:100%;height:100%}
+.env-flap{height:62%;transform-origin:50% 0;z-index:4;filter:drop-shadow(0 3px 3px rgba(84,52,30,.18))}
+.env-flap i{display:block;width:100%;height:100%;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(#f6eadb,#ead7c1)}
+.seal{position:absolute;left:50%;top:60%;width:28%;aspect-ratio:1;margin:-14% 0 0 -14%;padding:0;border:0;background:none;cursor:pointer;z-index:5;filter:drop-shadow(0 4px 5px rgba(60,30,15,.42));transition:opacity .4s,transform .4s;animation:seal 2.6s ease-in-out infinite}
+.seal img{width:100%}
+@keyframes seal{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.intro .hint,.intro .skip,.intro .hint2{font-family:var(--display);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);text-align:center;transition:opacity .3s}
+.intro .hint{font-size:.82rem;padding:0 20px}
+.intro .hint span{display:block;margin-top:7px}
+.intro .skip{font-size:.68rem;letter-spacing:.2em;background:none;border:0;border-bottom:1px solid color-mix(in srgb,var(--ink-soft) 45%,transparent);padding:4px 2px;cursor:pointer;margin-top:4px}
+.intro .hint2{position:absolute;left:0;right:0;bottom:max(18px,4vh);font-size:.74rem;opacity:0}
+
+.pass{position:absolute;left:50%;top:50%;width:var(--pw);height:calc(var(--pw)/.64);font-size:calc(var(--pw)/22);display:grid;grid-template-columns:minmax(0,1fr) 15%;background:var(--frame);border-radius:.7em;overflow:hidden;box-shadow:0 2px 10px rgba(84,52,30,.22);z-index:2;transform:translate(-50%,-50%) rotate(-90deg) scale(.54);transition:transform 1.05s cubic-bezier(.3,.7,.2,1),box-shadow .6s;color:var(--ink)}
+.pass-main{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:.5em;padding:1.5em 1.15em 1.1em;text-align:center;min-width:0}
+.pass-eyebrow{font-style:italic;font-size:.84em;color:var(--ink-soft)}
+.pass-names{font-family:var(--display);font-style:italic;font-weight:500;font-size:2.55em;line-height:1.04;color:var(--terra)}
+.pass-names span{display:block;font-size:.5em;line-height:1.2;color:var(--ink-soft)}
+.pass-avion{width:66%}
+.pass-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1em .7em;width:100%;margin:0;text-align:left}
+.pass-fields dt{font-family:var(--display);font-weight:600;font-size:.52em;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.pass-fields dd{margin:.15em 0 0;font-family:var(--display);font-weight:600;font-size:1.02em;line-height:1.15;letter-spacing:.07em;text-transform:uppercase;font-variant-numeric:lining-nums}
+.pass-code{width:100%;display:grid;gap:.3em}
+.pass-code i{display:block;height:2.3em;opacity:.82;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 5px,var(--ink) 5px 6px,transparent 6px 9px,var(--ink) 9px 12px,transparent 12px 14px,var(--ink) 14px 15px,transparent 15px 19px)}
+.pass-code span{font-family:var(--display);font-weight:600;font-size:.6em;letter-spacing:.34em;color:var(--ink-soft);font-variant-numeric:lining-nums}
+.pass-strip{display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:1.2em 0;background:linear-gradient(180deg,#a34b2e,#7f3520);color:var(--frame);border-left:2px dashed color-mix(in srgb,var(--frame) 75%,transparent);font-family:var(--display);font-weight:600;text-transform:uppercase}
+.pass-strip span{writing-mode:vertical-rl;font-size:.78em;letter-spacing:.34em;white-space:nowrap}
+.pass-strip b{writing-mode:vertical-rl;font-size:.86em;letter-spacing:.3em;font-weight:600}
+.pass-strip svg{width:1.3em;height:1.3em;fill:currentColor}
+
+.intro.is-open .seal{opacity:0;transform:scale(.6);animation:none}
+.intro.is-open .hint,.intro.is-open .skip{opacity:0;pointer-events:none}
+.intro.is-open .env-flap{transform:rotateX(180deg);z-index:0}
+.intro.is-out .pass{transform:translate(-50%,calc(-50% - var(--eh)*.98)) rotate(-90deg) scale(.54)}
+.intro.is-pass .pass{transform:translate(-50%,-50%) rotate(0deg) scale(1);z-index:10;box-shadow:0 18px 40px rgba(84,52,30,.3)}
+.intro.is-pass .env-back,.intro.is-pass .env-front{opacity:0;transform:translateY(34vh)}
+.intro.is-pass .env-flap{opacity:0;transform:translateY(34vh) rotateX(180deg)}
+.intro.is-pass .hint2{opacity:1;transition-delay:1s}
+.intro.is-done{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.intro,.intro *{transition:none!important;animation:none!important}}
+</style>
+
+<div class="intro" id="intro" hidden>
+  <img class="deco" src="assets/bord.webp" width="238" height="768" alt="">
+  <div class="stage">
+    <div class="env-back"></div>
+    <div class="pass">
+      <div class="pass-main">
+        <p class="pass-eyebrow" data-i18n="passInv">Vous êtes invités au mariage de</p>
+        <p class="pass-names">Mathilde <span>&amp;</span> Alejandro</p>
+        <img class="pass-avion" src="assets/avion-net.webp" width="626" height="144" alt="">
+        <dl class="pass-fields">
+          <div><dt>Date · Fecha</dt><dd>13 nov 2027</dd></div>
+          <div><dt>Destination · Destino</dt><dd>Madrid</dd></div>
+          <div><dt>Embarquement · Embarque</dt><dd>16h30</dd></div>
+          <div><dt>Porte · Puerta</dt><dd>Inhala Hotel Garden</dd></div>
+        </dl>
+        <div class="pass-code"><i></i><span>MA 1311 · MAD</span></div>
+      </div>
+      <div class="pass-strip"><span data-i18n="passTitle">Carte d’embarquement</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.500c0-.830-.670-1.500-1.500-1.500S10 2.670 10 3.500V9l-8 5v2l8-2.500V19l-2 1.500V22l3.500-1 3.500 1v-1.500L13 19v-5.500l8 2.500z"/></svg><b>MAD</b></div>
+    </div>
+    <div class="env-front"><svg viewBox="0 0 142 100" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 71,56 0,100" fill="#eedcc8"/><polygon points="142,0 71,56 142,100" fill="#ead6c0"/><polygon points="0,100 71,46 142,100" fill="#f3e5d5"/><path d="M0,100 L71,46 L142,100" fill="none" stroke="#d9c2a8" stroke-width=".600"/></svg></div>
+    <div class="env-flap"><i></i></div>
+    <button class="seal" type="button" id="seal" aria-label="Ouvrir l’invitation · Abrir la invitación"><img src="assets/sceau.webp" width="480" height="480" alt=""></button>
+  </div>
+  <p class="hint">Touchez le sceau pour ouvrir<span>Toca el sello para abrir</span></p>
+  <button class="skip" type="button" id="intro-skip">Passer l’animation · Saltar la animación</button>
+  <p class="hint2">Touchez pour entrer · Toca para entrar</p>
+</div>
+<script>document.getElementById("intro").hidden=false;document.documentElement.classList.add("intro-on");</script>
+
+<div class="sheet">
+  <div class="lang" role="group" aria-label="Langue · Idioma">
+    <button type="button" id="lang-fr" data-lang="fr" aria-pressed="true" aria-label="Français"><i class="fl fr"></i>FR</button>
+    <button type="button" id="lang-es" data-lang="es" aria-pressed="false" aria-label="Español"><i class="fl es"></i>ES</button>
+  </div>
+
+  <header class="top">
+    <div class="photo"><img src="assets/portrait.webp" width="874" height="478" alt="Mathilde et Alejandro" data-i18n-alt="photo"></div>
+    <div class="hero-title">
+      <img class="avion" src="assets/avion.webp" width="626" height="144" alt="">
+      <h1 data-i18n="title">Nous nous<br>marions&nbsp;!</h1>
+      <div class="rule center"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+      <p class="names">Mathilde &amp; Alejandro</p>
+      <p class="date">13.11.2027</p>
+    </div>
+    <div class="sep" aria-hidden="true"><span></span><img src="assets/feuille1.webp" width="144" height="96" alt=""><span></span></div>
+    <img class="villes" src="assets/villes.webp" width="1212" height="908" alt="Édimbourg, Grenoble, Madrid">
+    <section class="story-text" aria-label="Notre histoire" data-i18n-label="storyLabel">
+      <p data-i18n="s1">Tout a commencé en Écosse, sans imaginer qu’une belle amitié deviendrait un jour notre histoire d’amour.</p>
+      <p data-i18n="s2">De Grenoble à Madrid, nous avons construit notre foyer, accueilli nos deux merveilleuses filles et découvert que le plus beau des voyages est celui que l’on partage avec son meilleur ami, son âme sœur, sa moitié.</p>
+      <p data-i18n="s3">Aujourd’hui, nous souhaitons célébrer notre amour avec vous, entourés de ceux qui font partie de notre histoire, exactement neuf ans après le début de notre aventure.</p>
+      <p><span data-i18n="s4">Votre présence à nos côtés pour cette journée si particulière nous ferait immensément plaisir, pour continuer ensemble à écrire les prochains chapitres de notre histoire.</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></p>
+    </section>
+    <img class="bord" src="assets/bord.webp" width="238" height="768" alt="">
+  </header>
+
+  <section class="save">
+    <p class="label" data-i18n="saveLabel">Réserver la date</p>
+    <div class="rule center"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+    <p class="big"><span data-i18n="weekday">Samedi</span><br><span data-i18n="fullDate">13 novembre 2027</span></p>
+  </section>
+
+  <div class="cal">
+    <a class="btn cal-btn" id="cal-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mariage%20Mathilde%20%26%20Alejandro&amp;dates=20271113T163000%2F20271113T235900&amp;ctz=Europe%2FMadrid&amp;location=Inhala%20Hotel%20Garden%2C%20Calle%20San%20Bernardo%201%2C%2028013%20Madrid&amp;details=C%C3%A9r%C3%A9monie%2016h30%20%C2%B7%20Cocktail%2018h00%20%C2%B7%20Repas%2020h30%20%C2%B7%20Fiesta%2022h30" data-fr="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mariage%20Mathilde%20%26%20Alejandro&amp;dates=20271113T163000%2F20271113T235900&amp;ctz=Europe%2FMadrid&amp;location=Inhala%20Hotel%20Garden%2C%20Calle%20San%20Bernardo%201%2C%2028013%20Madrid&amp;details=C%C3%A9r%C3%A9monie%2016h30%20%C2%B7%20Cocktail%2018h00%20%C2%B7%20Repas%2020h30%20%C2%B7%20Fiesta%2022h30" data-es="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda%20Mathilde%20%26%20Alejandro&amp;dates=20271113T163000%2F20271113T235900&amp;ctz=Europe%2FMadrid&amp;location=Inhala%20Hotel%20Garden%2C%20Calle%20San%20Bernardo%201%2C%2028013%20Madrid&amp;details=Ceremonia%2016%3A30%20%C2%B7%20C%C3%B3ctel%2018%3A00%20%C2%B7%20Cena%2020%3A30%20%C2%B7%20Fiesta%2022%3A30" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="5" width="17" height="15.500" rx="2"/><path d="M3.500 10h17M8 3v4M16 3v4" stroke-linecap="round"/></svg><span data-i18n="cal">Ajouter au calendrier</span></a>
+  </div>
+
+  <section class="day">
+    <div class="venue">
+      <div class="venue-head">
+        <img src="assets/epingle.webp" width="72" height="88" alt="">
+        <div>
+          <p class="label" data-i18n="venueLabel">Lieu de la célébration</p>
+          <div class="rule"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+        </div>
+      </div>
+      <div class="print"><img class="shot" src="assets/hotel.jpg" width="1079" height="1198" alt="Inhala Hotel Garden, Madrid" loading="lazy"><span class="tape"></span><img class="brin" src="assets/camion.webp" width="820" height="753" alt=""></div>
+      <h2 class="venue-name">Inhala Hotel Garden</h2>
+      <p class="addr">Calle San Bernardo 1 · 28013 Madrid</p>
+      <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=Inhala+Hotel+Garden%2C+Calle+San+Bernardo+1%2C+28013+Madrid" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="maps">Voir sur Google Maps</span>
+      </a>
+    </div>
+
+    <div class="programme">
+      <h2 class="caps" data-i18n="programme">Programme</h2>
+      <div class="rule center"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+      <img class="strip" src="assets/programme.webp" width="1024" height="160" alt="">
+      <ol class="timeline">
+        <li>
+          <time datetime="2027-11-13T16:30">16h30</time><span class="what" data-i18n="p1">Cérémonie</span>
+          <img class="leaf" src="assets/feuille1.webp" width="144" height="96" alt="">
+        </li>
+        <li>
+          <time datetime="2027-11-13T18:00">18h00</time><span class="what" data-i18n="p2">Cocktail</span>
+          <img class="leaf" src="assets/feuille2.webp" width="120" height="76" alt="">
+        </li>
+        <li>
+          <time datetime="2027-11-13T20:30">20h30</time><span class="what" data-i18n="p3">Repas</span>
+          <img class="leaf" src="assets/feuille3.webp" width="124" height="76" alt="">
+        </li>
+        <li>
+          <time datetime="2027-11-13T22:30">22h30</time><span class="what" data-i18n="p4">Fiesta</span>
+          <img class="leaf" src="assets/feuille4.webp" width="128" height="92" alt="">
+        </li>
+      </ol>
+      <a class="btn rsvp" id="rsvp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfKkTEWQHwy2QMpHviozqtjFsY8UwtTi7mY0TOyDu7MKQ3-cg/viewform" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.500" width="18" height="13.500" rx="1.500"/><path d="M3.500 6.500l8.500 7 8.500-7"/></svg>
+        <span><b data-i18n="rsvp">Confirmer votre présence</b><small data-i18n="rsvpBy">Répondre avant le 13.08.2027</small></span>
+      </a>
+    </div>
+    <img class="globe" src="assets/globe.webp" width="224" height="628" alt="" loading="lazy">
+  </section>
+
+  <section class="more">
+    <div class="vol" aria-hidden="true"><svg viewBox="0 0 600 56"><path d="M8,40 C90,14 150,50 230,34 C262,27 276,8 258,7 C240,6 244,34 292,36 C380,40 470,34 552,17" fill="none" stroke="currentColor" stroke-width="1.300" stroke-dasharray="5 6" stroke-linecap="round" opacity=".6"/><path d="M21 16v-2l-8-5V3.500c0-.830-.670-1.500-1.500-1.500S10 2.670 10 3.500V9l-8 5v2l8-2.500V19l-2 1.500V22l3.500-1 3.500 1v-1.500L13 19v-5.500l8 2.500z" fill="currentColor" opacity=".8" transform="translate(568,12) rotate(77) scale(.950) translate(-12,-12)"/></svg></div>
+    <article class="card">
+      <div class="card-text">
+        <h2 class="caps"><img src="assets/lit.webp" width="88" height="64" alt=""><span data-i18n="sleepTitle">Où dormir&nbsp;?</span></h2>
+        <div class="rule"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+        <p class="promo"><span data-i18n="promo">Voici un code de réduction de 20&nbsp;% pour l’Inhala Hotel Garden&nbsp;:</span> <span class="code soon" id="promo-code" data-i18n="promoSoon">code à venir</span></p>
+        <p data-i18n="sleepText">Nous vous proposons une sélection de 3 hôtels dans le centre de Madrid, à quelques minutes de l’Inhala Hotel Garden, pour tous les budgets.</p>
+      </div>
+      <a class="btn soft" id="hotels-btn" href="https://maps.app.goo.gl/deR8og8Z531RU9TA6?g_st=aw" target="_blank" rel="noopener"><span data-i18n="sleepBtn">Découvrir les hôtels</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <img class="pic" src="assets/hotels.webp" width="294" height="420" alt="" loading="lazy">
+    </article>
+    <article class="card trajet" id="trajet">
+      <div class="card-text">
+        <h2 class="caps"><svg class="ico-t" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.500c0-.830-.670-1.500-1.500-1.500S10 2.670 10 3.500V9l-8 5v2l8-2.500V19l-2 1.500V22l3.500-1 3.500 1v-1.500L13 19v-5.500l8 2.500z"/></svg><span data-i18n="airTitle">Depuis l’aéroport</span></h2>
+        <div class="rule"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+        <dl class="moyens">
+          <div><dt><span data-i18n="airTaxi">Taxi</span><b>33&nbsp;€</b></dt><dd data-i18n="airTaxiT">Tarif fixe entre l’aéroport et le centre de Madrid (à l’intérieur de la M-30). Environ 30&nbsp;minutes.</dd></div>
+          <div><dt><span data-i18n="airMetro">Métro</span></dt><dd data-i18n="airMetroT">Ligne 8 jusqu’à Nuevos Ministerios, puis ligne 10 jusqu’à Plaza de España, à quelques minutes à pied de l’hôtel. Stations les plus proches&nbsp;: Santo Domingo (ligne 2) et Callao (lignes 3 et 5).</dd></div>
+          <div><dt><span data-i18n="airBus">Bus</span></dt><dd data-i18n="airBusT">Exprés Aeropuerto (ligne 203), 24&nbsp;h/24, jusqu’à Cibeles et Atocha. Depuis Cibeles, métro ligne 2 jusqu’à Santo Domingo.</dd></div>
+        </dl>
+        <p class="petit" data-i18n="airNote">Tarif du taxi relevé en 2026.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-text">
+        <h2 class="caps"><img src="assets/carte.webp" width="80" height="72" alt=""><span data-i18n="cityTitle">Découvrir Madrid</span></h2>
+        <div class="rule"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+        <p data-i18n="cityText">Retrouvez nos recommandations de restaurants, bars et lieux à visiter pour profiter de votre séjour à Madrid.</p>
+      </div>
+      <a class="btn soft" id="city-btn" href="https://maps.app.goo.gl/pycWZza3E3E1dauw9?g_st=aw" target="_blank" rel="noopener"><span data-i18n="cityBtn">Voir nos bonnes adresses</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <img class="pic" src="assets/alcala.webp" width="372" height="428" alt="Puerta de Alcalá" loading="lazy">
+    </article>
+  </section>
+
+  <section class="decollage">
+    <p class="label" id="cd-label" data-i18n="cdLabel">Décollage dans</p>
+    <div class="rule center"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+    <div class="flaps" id="countdown" role="timer">
+      <div><b id="cd-d">–</b><span data-i18n="cdD">jours</span></div>
+      <div><b id="cd-h">–</b><span data-i18n="cdH">heures</span></div>
+      <div><b id="cd-m">–</b><span data-i18n="cdM">minutes</span></div>
+      <div><b id="cd-s">–</b><span data-i18n="cdS">secondes</span></div>
+    </div>
+    <p class="vol-info" data-i18n="cdVol">Vol MA 1311 · Madrid · 13.11.2027 · 16h30</p>
+  </section>
+
+  <footer>
+    <div class="embleme"><img src="assets/sac.webp" width="760" height="955" alt="M &amp; A"></div>
+  </footer>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21.350l-1.450-1.320C5.400 15.360 2 12.280 2 8.500 2 5.420 4.420 3 7.500 3c1.740 0 3.410.810 4.500 2.090C13.090 3.810 14.760 3 16.500 3 19.580 3 22 5.420 22 8.500c0 3.780-3.400 6.860-8.550 11.540z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2C8.130 2 5 5.130 5 9c0 5.250 7 13 7 13s7-7.750 7-13c0-3.870-3.130-7-7-7zm0 9.500a2.500 2.500 0 0 1 0-5 2.500 2.500 0 0 1 0 5z"/></symbol>
+</svg>
+
+<script>
+(function(){
+  var es={
+    title:"¡Nos<br>casamos!",
+    s1:"Todo empezó en Escocia, sin imaginar que una bonita amistad se convertiría un día en nuestra historia de amor.",
+    s2:"De Grenoble a Madrid, hemos construido nuestro hogar, recibido a nuestras dos maravillosas hijas y descubierto que el viaje más bonito es el que se comparte con tu mejor amigo, tu alma gemela, tu otra mitad.",
+    s3:"Hoy queremos celebrar nuestro amor con vosotros, rodeados de quienes forman parte de nuestra historia, exactamente nueve años después del comienzo de nuestra aventura.",
+    s4:"Vuestra presencia a nuestro lado en un día tan especial nos haría inmensamente felices, para seguir escribiendo juntos los próximos capítulos de nuestra historia.",
+    saveLabel:"Reserva la fecha", cal:"Añadir al calendario", weekday:"Sábado", fullDate:"13 de noviembre de 2027",
+    venueLabel:"Lugar de la celebración", maps:"Ver en Google Maps",
+    programme:"Programa", p1:"Ceremonia", p2:"Cóctel", p3:"Cena", p4:"Fiesta",
+    rsvp:"Confirmar asistencia", rsvpBy:"Responder antes del 13.08.2027",
+    passInv:"Os invitamos a la boda de", passTitle:"Tarjeta de embarque",
+    giftLabel:"Aviso a los pasajeros", giftText:"Por motivos de seguridad, no se admiten licuadoras a bordo. En cambio, las transferencias embarcan con prioridad.", giftConcept:"Concepto", giftCopy:"Copiar el IBAN", giftThanks:"Gracias de corazón: vuestra presencia sigue siendo nuestro mejor regalo.", copied:"Copiado", cdLabel:"Despegue en", cdDone:"¡Hemos despegado!", cdD:"días", cdH:"horas", cdM:"minutos", cdS:"segundos", cdVol:"Vuelo MA 1311 · Madrid · 13.11.2027 · 16h30",
+    airTitle:"Desde el aeropuerto", airTaxi:"Taxi", airTaxiT:"Tarifa fija entre el aeropuerto y el centro de Madrid (dentro de la M-30). Unos 30&nbsp;minutos.", airMetro:"Metro", airMetroT:"Línea 8 hasta Nuevos Ministerios y después línea 10 hasta Plaza de España, a pocos minutos a pie del hotel. Estaciones más cercanas: Santo Domingo (línea 2) y Callao (líneas 3 y 5).", airBus:"Autobús", airBusT:"Exprés Aeropuerto (línea 203), 24&nbsp;horas, hasta Cibeles y Atocha. Desde Cibeles, metro línea 2 hasta Santo Domingo.", airNote:"Tarifa del taxi consultada en 2026.",
+    sleepTitle:"¿Dónde dormir?",
+    promo:"Aquí tenéis un código de descuento del 20&nbsp;% para el Inhala Hotel Garden:", promoSoon:"código pendiente",
+    sleepText:"Os proponemos una selección de 3 hoteles en el centro de Madrid, a pocos minutos del Inhala Hotel Garden, para todos los presupuestos.",
+    sleepBtn:"Ver los hoteles", sleepNote:"Nuestra selección de hoteles llegará muy pronto.",
+    cityTitle:"Descubrir Madrid",
+    cityText:"Aquí encontraréis nuestras recomendaciones de restaurantes, bares y lugares que visitar para disfrutar de vuestra estancia en Madrid.",
+    cityBtn:"Ver nuestras recomendaciones", cityNote:"Nuestras recomendaciones llegarán muy pronto."
+  };
+  var nodes=[].slice.call(document.querySelectorAll("[data-i18n]"));
+  var fr={}; nodes.forEach(function(n){fr[n.dataset.i18n]=n.innerHTML});
+  fr.copied="Copié"; fr.cdDone="Nous avons décollé&nbsp;!";
+  var cur="fr";
+  var photo=document.querySelector("[data-i18n-alt]"), story=document.querySelector("[data-i18n-label]");
+  function setLang(l){
+    var d=l==="es"?es:fr; cur=l;
+    var cl=document.getElementById("cal-link"); if(cl) cl.href=cl.dataset[l==="es"?"es":"fr"];
+    var tj=document.getElementById("trajet"); if(tj){tj.hidden=(l==="es"); tj.parentNode.classList.toggle("deux",l==="es")}
+    nodes.forEach(function(n){var k=n.dataset.i18n; if(d[k]!=null) n.innerHTML=d[k]});
+    document.documentElement.lang=l;
+    photo.alt=l==="es"?"Mathilde y Alejandro":"Mathilde et Alejandro";
+    story.setAttribute("aria-label",l==="es"?"Nuestra historia":"Notre histoire");
+    document.getElementById("lang-fr").setAttribute("aria-pressed",String(l!=="es"));
+    document.getElementById("lang-es").setAttribute("aria-pressed",String(l==="es"));
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  document.querySelector(".lang").addEventListener("click",function(e){
+    var b=e.target.closest("button[data-lang]"); if(b) setLang(b.dataset.lang);
+  });
+  var start="fr", h=(location.hash||"").replace("#","");
+  if(h==="es"||h==="fr") start=h;
+  else{try{var s=localStorage.getItem("lang"); if(s==="es"||s==="fr") start=s}catch(e){}}
+  document.documentElement.lang="fr";
+  if(start==="es") setLang("es");
+
+
+  /* countdown to take-off: 13 Nov 2027, 16:30 in Madrid (15:30 UTC) */
+  (function(){
+    var T=Date.UTC(2027,10,13,15,30,0), ids=["cd-d","cd-h","cd-m","cd-s"], iv;
+    function put(v){ids.forEach(function(id,i){var e=document.getElementById(id), x=i?(v[i]<10?"0"+v[i]:""+v[i]):""+v[i]; if(e.textContent!==x) e.textContent=x})}
+    function tick(){
+      var s=Math.floor((T-Date.now())/1000);
+      if(s<=0){
+        put([0,0,0,0]); clearInterval(iv);
+        var lab=document.getElementById("cd-label"); lab.dataset.i18n="cdDone"; lab.innerHTML=(cur==="es"?es:fr).cdDone; return;
+      }
+      put([Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60]);
+    }
+    tick(); iv=setInterval(tick,1000);
+  })();
+
+  /* envelope opening */
+  (function(){
+    var intro=document.getElementById("intro"); if(!intro||intro.hidden) return;
+    var root=document.documentElement, timers=[], stage=0;
+    function later(f,ms){timers.push(setTimeout(f,ms))}
+    function finish(){
+      if(stage===3) return; stage=3; timers.forEach(clearTimeout);
+      intro.classList.add("is-done"); root.classList.remove("intro-on");
+      setTimeout(function(){intro.hidden=true},750);
+    }
+    function open(){
+      if(stage!==0) return; stage=1; intro.classList.add("is-open");
+      later(function(){intro.classList.add("is-out")},550);
+      later(function(){intro.classList.add("is-pass");stage=2},1650);
+      later(finish,7200);
+    }
+    intro.addEventListener("click",function(e){
+      if(e.target.closest(".skip")){finish();return}
+      if(stage===0) open(); else if(stage===2) finish();
+    });
+    document.addEventListener("keydown",function(e){if(e.key==="Escape"&&stage!==3) finish()});
+  })();
+})();
+</script>
+</body>
+</html>
